@@ -1,0 +1,23 @@
+{
+  "name": "website-boilerplate",
+  "version": "1.0.0",
+  "description": "A simple boilerplate for creating a website, with a live reloading development environment.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LWTechGaming/website-boilerplate.git"
+  },
+  "author": "Linus Willner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LWTechGaming/website-boilerplate/issues"
+  },
+  "homepage": "https://github.com/LWTechGaming/website-boilerplate#readme",
+  "dependencies": {
+    "live-server": "^1.2.0"
+  }
+}
