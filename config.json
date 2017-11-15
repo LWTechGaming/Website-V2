@@ -3,7 +3,7 @@
   "host": "localhost",
   "docRoot": "./public",
   "openBrowser": true,
-  "notFoundFile": "",
+  "notFoundFile": "404.html",
   "waitBeforeReload": 500,
   "logLevel": 2
 }
