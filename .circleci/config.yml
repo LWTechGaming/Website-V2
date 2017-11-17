@@ -9,4 +9,4 @@ jobs:
         - master
     steps:
       - checkout
-      - run: scp ./public/* $DEPLOYMENT_USER@$DEPLOYMENT_HOST:$DEPLOYMENT_DIR
+      - run: scp -r ./public/* $DEPLOYMENT_USER@$DEPLOYMENT_HOST:$DEPLOYMENT_DIR
