@@ -9,7 +9,18 @@
 		<title>Skills - Linus Willner</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<!-- JS -->
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<script src="assets/js/scrollreveal.min.js"></script>
+		<script>
+			window.sr = ScrollReveal({
+				duration: 700,
+				reset: true
+			})
+		</script>
+
+		<!-- CSS -->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
@@ -43,8 +54,8 @@
 					</nav>
 
 				<!-- Banner -->
-					<section id="banner" class="style2">
-						<div class="inner">
+					<section id="banner">
+						<div class="inner" id="top">
 							<span class="image">
 								<img src="images/code2.png" alt="" />
 							</span>
@@ -60,18 +71,9 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- One -->
-							<section id="one">
-								<div class="inner">
-									<header class="major">
-										<h2>Skills by category</h2>
-									</header>
-								</div>
-							</section>
-
-						<!-- Two -->
-							<section id="two" class="spotlights">
-								<section>
+						<!-- Skills -->
+							<section id="skills" class="spotlights">
+								<section class="rev-left">
 									<a href="projects.html" class="image">
 										<img src="images/writing-square.jpg" alt="" data-position="center center" />
 									</a>
@@ -88,7 +90,7 @@
 										</div>
 									</div>
 								</section>
-								<section>
+								<section class="rev-right">
 									<a href="https://github.com/LWTechGaming" class="image">
 										<img src="images/code2-square.png" alt="" data-position="top center" />
 									</a>
@@ -105,7 +107,7 @@
 										</div>
 									</div>
 								</section>
-								<section>
+								<section class="rev-left">
 									<a href="#" class="image">
 										<img src="images/laptop-square.jpg" alt="" data-position="25% 25%" />
 									</a>
@@ -119,7 +121,7 @@
 										</div>
 									</div>
                 </section>
-                <section>
+                <section class="rev-right">
                     <a href="#" class="image">
                       <img src="images/premiere-square.jpg" alt="" data-position="25% 25%" />
                     </a>
@@ -199,6 +201,14 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				sr.reveal('#top')
+				sr.reveal('.rev-left', { origin: 'left' })
+				sr.reveal('.rev-right', { origin: 'right' })
+				sr.reveal('#contact')
+				sr.reveal('#footer')
+			</script>
 
 	</body>
 </html>

@@ -9,7 +9,18 @@
 		<title>Story - Linus Willner</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<!-- JS -->
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<script src="assets/js/scrollreveal.min.js"></script>
+		<script>
+			window.sr = ScrollReveal({
+				duration: 700,
+				reset: true
+			})
+		</script>
+
+		<!-- CSS -->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
@@ -45,8 +56,8 @@
 				<!-- Main -->
 					<div id="main" class="alt">
 
-						<!-- One -->
-							<section id="one">
+						<!-- Story -->
+							<section>
 								<div class="inner">
 									<header class="major">
 										<h1>My story</h1>
@@ -73,8 +84,8 @@
                   <p>And here I am sitting today, in front of a computer screen, drinking coffee from my GitHub mug and writing my story. What lies ahead, then? As for education, polytechnic and ICT engineer degree in programming is what I’m going for. When it comes to programming, I’m looking to learn a new programming language next spring when my matriculation exams are over and I have time to spare. I’ve thought of learning Java and perhaps cramming in Python there too. Paid programming work is something I do already and I’m looking to expand in that field currently.</p>
                   <p>However, in the words of famous Finnish composer Jean Sibelius: “I’m a composer, not a fortune teller”. Who knows what lies ahead; I certainly don’t. Looking back, I’ve already gotten quite far while only just having turned 18. I know for a fact there’s still a lot to see and do. Life is finite, but the opportunities aren’t, am I right?</p>
                   <br/><br/>
-                  <p><i>The terminal process terminated with a non-zero exit code: Out of coffee, programmer went to get some more.</i></p>
-                  <span class="image"><img src="images/procaffeination.jpg" width="50%" height="50%" alt="" /></span>
+                  <p id="coffee-text"><i>The terminal process terminated with a non-zero exit code: Out of coffee, programmer went to get some more.</i></p>
+                  <span class="image"><img src="images/procaffeination.jpg" width="50%" height="50%" alt="" id="coffee" /></span>
 								</div>
 							</section>
 
@@ -142,6 +153,13 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				sr.reveal('.left', { origin: 'left' })
+				sr.reveal('.right', { origin: 'right' })
+				sr.reveal('#contact')
+				sr.reveal('#footer')
+			</script>
 
 	</body>
 </html>

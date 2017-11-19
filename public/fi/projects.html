@@ -6,10 +6,21 @@
 -->
 <html>
 	<head>
-		<title>Projects - Linus Willner</title>
+		<title>Projektini - Linus Willner</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<!-- JS -->
 		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+		<script src="../assets/js/scrollreveal.min.js"></script>
+		<script>
+			window.sr = ScrollReveal({
+				duration: 700,
+				reset: true
+			})
+		</script>
+
+		<!-- CSS -->
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
@@ -45,33 +56,33 @@
 				<!-- Main -->
 					<div id="main" class="alt">
 
-						<!-- One -->
-							<section id="one">
+						<!-- Projects -->
+							<section id="projects-container">
 								<div class="inner">
-									<header class="major">
+									<header class="major top">
 										<h1>Projektini</h1>
                   </header>
-                  <p>Osallistun useihin projekteihin, useimmat niistä ovat ohjelmointiin liittyviä. Jotkut ovat Free Open Source Software-alueen sisällä, kun taas jotkut ovat suljetun lähdekoodin projekteja. Useimmat ovat vapaaehtoisia, vain muutamia teen maksusta. Tällä sivulla ovat projektit joita johdan/johdin ja ylläpidän/ylläpidin.</p>
+                  <p class="top">Osallistun useihin projekteihin, useimmat niistä ovat ohjelmointiin liittyviä. Jotkut ovat Free Open Source Software-alueen sisällä, kun taas jotkut ovat suljetun lähdekoodin projekteja. Useimmat ovat vapaaehtoisia, vain muutamia teen maksusta. Tällä sivulla ovat projektit joita johdan/johdin ja ylläpidän/ylläpidin.</p>
                   <!-- Positions -->
                   <header class="major">
                     <h2 id="positions">Työnantajiani</h2>
                   </header>
                   <div class="row">
-                    <div class="4u 12$(small)">
+                    <div class="4u 12$(small) chunk">
                       <h3><a href="http://www.tarratac.fi/">Oy Tarra-Tac Ab</a></h3>
                       <p>
                         <strong>Ohjelmistokehittäjä, järjestelmänvalvoja (Osa-aikainen)</strong><br/>
                         Tarra-Tac on isäni painotalo jossa työskentelen opiskelujen ohella järjestelmänvalvojana. Kehitän myös ohjelmistoja ja automaatiojärjestelmiä yrityksen käyttöön. Suurin osa "oikeasta" työkokemuksestani tulee tästä paikallisesta yrityksestä, jos vapaaehtoisprojekteja ei lasketa.
                       </p>
                     </div>
-                    <div class="4u 12$(small)">
+                    <div class="4u 12$(small) chunk">
                       <h3><a href="https://thesharks.xyz">TheSharks</a></h3>
                       <p>
                         <strong>Johtava tekninen kirjoitta, ohjelmistokehittäjä, kääntäjä</strong><br/>
                         TheSharks on internetissä toimiva yhteisö kehittäjiä jotka ovat luoneet WildBot-chatbotin Discordille. TheSharksilla vastaan käyttöohjeista ja käännöksistä. Teen myös ohjelmistokehitystä ja etätoimista järjestelmänvalvontaa serveri-infrastruktuurillamme.
                       </p>
                     </div>
-                    <div class="4u$ 12$(small)">
+                    <div class="4u$ 12$(small) chunk">
                       <h3>DevLodge</h3>
                       <p>
                         <strong>Johtava kehittäjä, organisaation johtaja, vastuuhenkilö</strong><br/>
@@ -84,35 +95,35 @@
                     <h2 id="projects">Omia projektejani</h2>
                   </header>
                   <div class="row">
-                    <div class="4u 12$(small)">
+                    <div class="4u 12$(small) chunk">
                       <h3><a href="https://github.com/LWTechGaming/website-boilerplate">website-boilerplate</a></h3>
                       <p>
                         <strong>JavaScript</strong><br/>
                         Yksinkertainen ja kevyt verkkosivujen kehitysympäristö live-päivityksillä, rakennettu käyttäen <a href="https://github.com/tapio/live-server">live-serveriä</a>.
                       </p>
                     </div>
-                    <div class="4u 12$(small)">
+                    <div class="4u 12$(small) chunk">
                       <h3><a href="https://github.com/TarraTac/printcalc">printcalc-api</a></h3>
                       <p>
                         <strong>JavaScript, Express.js</strong><br/>
                         API-järjestelmä PrintCalc-ohjelman datan säilytykseen. PrintCalc on ohjelma jota kehitän töissä.
                       </p>
                     </div>
-                    <div class="4u$ 12$(small)">
+                    <div class="4u$ 12$(small) chunk">
                       <h3><a href="https://github.com/LWTechGaming/data-safe">data-safe</a></h3>
                       <p>
                         <strong>JavaScript, ShareX</strong><br/>
                         Ei niin weeaboo-mainen forkki WeebDev-tiimin <a href="https://github.com/WeebDev/lolisafe">lolisafe-ohjelmasta</a> (Versio 2.x.x). Käytössä henkilökohtaisella kuvaserverilläni.
                       </p>
                     </div>
-                    <div class="4u 12$(small)">
+                    <div class="4u 12$(small) chunk">
                       <h3><a href="https://github.com/LWTechGaming/Discord-Spotify">Discord-Spotify</a></h3>
                       <p>
                         <strong>JavaScript, discordie</strong><br/>
                         Pieni komentokonsoliskripti jota käytetään omalla Discord-tilillä. Näyttää tällä hetkellä soivan kappaleen statusviestinä. Natiivi implementaatio tälle on tulossa pian.
                       </p>
                     </div>
-                    <div class="4u 12$(small)">
+                    <div class="4u 12$(small) chunk">
                       <h3><a href="http://swordfishbot.com">Swordfish & Logger</a></h3>
                       <p>
                         <strong>JavaScript, discordie/Eris</strong><br/>
@@ -132,21 +143,21 @@
                     <h2 id="contributions">Osallistumisia</h2>
                   </header>
                   <div class="row">
-                    <div class="4u 12$(small)">
+                    <div class="4u 12$(small) chunk">
                       <h3><a href="https://github.com/BeMacized/Midnight-Bot">Midnight</a></h3>
                       <p>
                         <strong>JavaScript, discord.js</strong><br/>
                         Tämä Discord-botti piti <a href="https://youtube.com/MrMuselk">Muselkin</a> Discord-serveriä ruodussa pitkään. Eräiden sisäisten konfliktien jälkeen se deprekoitiin eikä sitä enää kehitetä.
                       </p>
                     </div>
-                    <div class="4u 12$(small)">
+                    <div class="4u 12$(small) chunk">
                       <h3><a href="https://github.com/ArekSredzki/electron-release-server">electron-release-server</a></h3>
                       <p>
                         <strong>JavaScript, Electron, Sails.js</strong><br/>
                         Node.js:llä toimiva webpalvelu joka tarjoaa sekä hallitsee Electron-sovelluksen julkaisuja, täysin yhteensopiva sisäänrakennetun Squirrel-järjestelmän kanssa.
                       </p>
                     </div>
-                    <div class="4u 12$(small)">
+                    <div class="4u 12$(small) chunk">
                       <h3><a href="https://github.com/BeMacized/Grimoire">Grimoire & GrimoireWeb</a></h3>
                       <p>
                         <strong>Java, JavaScript, React.js</strong><br/>
@@ -155,7 +166,7 @@
                     </div>
                   </div>
                   <br/>
-                  <p>Huomaa, että kaikki projektit joihin olen osallistunut eivät ole listattuina - vain ne jotka ovat mielestäni tärkeitä ja/tai huomionarvoisia ovat tässä. Nähdäksesi kaikki osallistumiseni, käväise <a href="https://github.com/LWTechGaming">GitHub-sivullani</a>.</p>
+                  <p id="bottom">Huomaa, että kaikki projektit joihin olen osallistunut eivät ole listattuina - vain ne jotka ovat mielestäni tärkeitä ja/tai huomionarvoisia ovat tässä. Nähdäksesi kaikki osallistumiseni, käväise <a href="https://github.com/LWTechGaming">GitHub-sivullani</a>.</p>
 								</div>
 							</section>
 
@@ -223,6 +234,14 @@
 			<script src="../assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="../assets/js/main.js"></script>
+
+      <script>
+        sr.reveal('.top', { origin: 'left' })
+        sr.reveal('.chunk', { origin: 'top' })
+        sr.reveal('#bottom', { origin: 'left' })
+        sr.reveal('#contact')
+        sr.reveal('#footer')
+      </script>
 
 	</body>
 </html>

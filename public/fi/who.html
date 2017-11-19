@@ -9,7 +9,18 @@
 		<title>Kuka? - Linus Willner</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<!-- JS -->
 		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+		<script src="../assets/js/scrollreveal.min.js"></script>
+		<script>
+			window.sr = ScrollReveal({
+				duration: 700,
+				reset: true
+			})
+		</script>
+
+		<!-- CSS -->
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
@@ -45,8 +56,8 @@
 				<!-- Main -->
 					<div id="main" class="alt">
 
-						<!-- One -->
-							<section id="one">
+						<!-- Text -->
+							<section>
 								<div class="inner">
 									<header class="major">
 										<h1>Kuka minä olen?</h1>
@@ -123,6 +134,11 @@
 			<script src="../assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="../assets/js/main.js"></script>
+
+			<script>
+				sr.reveal('#contact')
+				sr.reveal('#footer')
+			</script>
 
 	</body>
 </html>

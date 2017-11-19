@@ -9,7 +9,18 @@
 		<title>Tarinani - Linus Willner</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<!-- JS -->
 		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+		<script src="../assets/js/scrollreveal.min.js"></script>
+		<script>
+			window.sr = ScrollReveal({
+				duration: 700,
+				reset: true
+			})
+		</script>
+
+		<!-- CSS -->
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
@@ -45,8 +56,8 @@
 				<!-- Main -->
 					<div id="main" class="alt">
 
-						<!-- One -->
-							<section id="one">
+						<!-- Story -->
+							<section>
 								<div class="inner">
 									<header class="major">
 										<h1>Minun tarinani</h1>
@@ -73,8 +84,8 @@
 									<p>Ja tässä sitten istun tänään, tietokonenäytön edessä, kahvia GitHub-mukistani juoden ja kirjoitan tarinaani. Miltä tulevaisuuteni sitten näyttää? Opiskelujen osalta aion lähteä ammattikouluun ja hankkia itselleni tieto- ja viestintätekniikan insinöörin paperit. Ohjelmoinnin saralla aion oppia uuden ohjelmoitikielen ensi keväänä kun ylioppilaskirjoitukseni ovat ohi ja minulla on aikaa kylliksi. Olen miettinyt Javan oppimista ja ehkä jopa Pythonin sovittamista siihen samaan pakettiin. Maksullista työtä olen jo tehnyt ja toivon voivani jatkaa sen tekemistä myös tulevaisuudessa.</p>
 									<p>Joka tapauksessa, Jean Sibeliuksen sanoin: "Olen säveltäjä, en ennustaja". Kuka tietää mitä tulevaisuus tuo tullessaan - minä en todellakaan tiedä. Retrospektissä olen päässyt jo aika pitkälle ollakseni vasta 18-vuotias. Tiedän varmasti että minulla on vielä paljon tehtävää ja nähtävää. Elämä on rajattu, mutta mahdollisuudet eivät, eikös vaan?</p>
 									<br/><br/>
-									<p><i>Konsoliprosessi sulkeutui sulkukoodilla joka ei ollut nolla: Kahvi loppui, koodari lähti hakemaan lisää.</i></p>
-                  <span class="image"><img src="../images/procaffeination.jpg" width="50%" height="50%" alt="" /></span>
+									<p id="coffee-text"><i>Konsoliprosessi sulkeutui sulkukoodilla joka ei ollut nolla: Kahvi loppui, koodari lähti hakemaan lisää.</i></p>
+                  <span class="image"><img src="../images/procaffeination.jpg" width="50%" height="50%" alt="" id="coffee" /></span>
 								</div>
 							</section>
 
@@ -142,6 +153,13 @@
 			<script src="../assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="../assets/js/main.js"></script>
+
+			<script>
+				sr.reveal('.left', { origin: 'left' })
+				sr.reveal('.right', { origin: 'right' })
+				sr.reveal('#contact')
+				sr.reveal('#footer')
+			</script>
 
 	</body>
 </html>

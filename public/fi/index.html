@@ -9,7 +9,18 @@
 		<title>Linus Willner</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<!-- JS -->
 		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+		<script src="../assets/js/scrollreveal.min.js"></script>
+		<script>
+			window.sr = ScrollReveal({
+				duration: 700,
+				reset: true
+			})
+		</script>
+
+		<!-- CSS -->
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
@@ -20,7 +31,7 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header" class="alt">
+					<header id="header">
 						<a href="index.html" class="logo"><strong>Linus</strong> <span>Willner</span></a>
 						<nav>
 							<a href="#menu">Valikko</a>
@@ -44,7 +55,7 @@
 
 				<!-- Banner -->
 					<section id="banner" class="major">
-						<div class="inner">
+						<div class="inner" id="top">
 							<header class="major">
 								<h1>Linus Willner</h1>
 							</header>
@@ -60,8 +71,8 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- One -->
-							<section id="one" class="tiles">
+						<!-- Tiles -->
+							<section id="tiles" class="tiles">
 								<article>
 									<span class="image">
 										<img src="../images/me2.jpg" alt="" />
@@ -100,8 +111,8 @@
 								</article>
 							</section>
 
-						<!-- Two -->
-							<section id="two">
+						<!-- Story -->
+							<section id="story">
 								<div class="inner">
 									<header class="major">
 										<h2>Minun tarinani</h2>
@@ -178,5 +189,12 @@
 			<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="../assets/js/main.js"></script>
 
+			<script>
+				sr.reveal('#top')
+				sr.reveal('#story')
+				sr.reveal('#contact')
+				sr.reveal('#footer')
+			</script>
+	
 	</body>
 </html>

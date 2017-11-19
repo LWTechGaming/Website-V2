@@ -6,10 +6,21 @@
 -->
 <html>
 	<head>
-		<title>Story - Linus Willner</title>
+		<title>Historia - Linus Willner</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<!-- JS -->
 		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+		<script src="../assets/js/scrollreveal.min.js"></script>
+		<script>
+			window.sr = ScrollReveal({
+				duration: 700,
+				reset: true
+			})
+		</script>
+
+		<!-- CSS -->
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
@@ -20,7 +31,7 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header" class="alt">
+					<header id="header">
 						<a href="index.html" class="logo"><strong>Linus</strong> <span>Willner</span></a>
 						<nav>
 							<a href="#menu">Meny</a>
@@ -45,8 +56,8 @@
 				<!-- Main -->
 					<div id="main" class="alt">
 
-						<!-- One -->
-							<section id="one">
+						<!-- Story -->
+							<section>
 								<div class="inner">
 									<header class="major">
 										<h1>Min historia</h1>
@@ -73,8 +84,8 @@
 									<p>Och här sitter jag då idag, framför en datorskärm, drickande kaffe från min GitHub-mugg och skriver min egna berättelse. Hur ser framtiden ut, då? Inom studier är yrkeshögskola och ICT-ingenjör inom programmering det som står på horisonten. Inom programmering har jag planerat att lära mig ett nytt programmeringsspråk nästa vår då studentskrivningarna är över och jag har överlopps tid. I siktet ligger Java och kanske även Python där med det samma. Betalt arbete inom programmerin är något som jag gör redan nu och jag söker efter möjligheter att utvidga inom det fältet just nu.</p>
 									<p>Trots allt, i orden av Jean Sibelius: "Jag är en kompositör, icke en spåman". Vem vet vad som ligger framöver - jag vet verkligen inte. I retrospekt har jag redan åstadkommit mycket för att bara vara 18 år gammal. Ett faktum är att det fortfarande finns massor att se och göra. Livet är ändligt, men möjligheterna är inte, inte så?</p>
 									<br/><br/>
-									<p><i>Terminalprocessen avslutades med en avslutningskod som inte var noll: Kaffet tog slut, programmeraren gick för att söka mera.</i></p>
-                  <span class="image"><img src="../images/procaffeination.jpg" width="50%" height="50%" alt="" /></span>
+									<p id="coffee-text"><i>Terminalprocessen avslutades med en avslutningskod som inte var noll: Kaffet tog slut, programmeraren gick för att söka mera.</i></p>
+                  <span class="image"><img src="../images/procaffeination.jpg" width="50%" height="50%" alt="" id="coffee" /></span>
 								</div>
 							</section>
 
@@ -143,5 +154,11 @@
 			<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="../assets/js/main.js"></script>
 
+			<script>
+				sr.reveal('.left', { origin: 'left' })
+				sr.reveal('.right', { origin: 'right' })
+				sr.reveal('#contact')
+				sr.reveal('#footer')
+			</script>
 	</body>
 </html>
