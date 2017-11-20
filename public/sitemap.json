@@ -1,0 +1,68 @@
+{
+  "en": [
+    {
+      "pageName": "Home",
+      "pageFile": "index.html"
+    },
+    {
+      "pageName": "Who?",
+      "pageFile": "who.html"
+    },
+    {
+      "pageName": "My story",
+      "pageFile": "story.html"
+    },
+    {
+      "pageName": "My skills",
+      "pageFile": "skills.html"
+    },
+    {
+      "pageName": "My projects",
+      "pageFile": "projects.html"
+    }
+  ],
+  "fi": [
+    {
+      "pageName": "Koti",
+      "pageFile": "index.html"
+    },
+    {
+      "pageName": "Kuka?",
+      "pageFile": "who.html"
+    },
+    {
+      "pageName": "Tarinani",
+      "pageFile": "story.html"
+    },
+    {
+      "pageName": "Taitoni",
+      "pageFile": "skills.html"
+    },
+    {
+      "pageName": "Projektini",
+      "pageFile": "projects.html"
+    }
+  ],
+  "sv": [
+    {
+      "pageName": "Hemsida",
+      "pageFile": "index.html"
+    },
+    {
+      "pageName": "Vem?",
+      "pageFile": "who.html"
+    },
+    {
+      "pageName": "Min historia",
+      "pageFile": "story.html"
+    },
+    {
+      "pageName": "Mina kunskaper",
+      "pageFile": "skills.html"
+    },
+    {
+      "pageName": "Mina projekt",
+      "pageFile": "projects.html"
+    }
+  ]
+}
