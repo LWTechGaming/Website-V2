@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "eslint .",
-    "start": "node server.js"
+    "start": "node server.js",
+    "compile": "cd ./public/src && browserify generators.js -o ../assets/js/menu.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
     "live-server": "^1.2.0"
   },
   "devDependencies": {
+    "browserify": "^14.5.0",
     "eslint": "^4.11.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-standard": "^3.0.1"
