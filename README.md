@@ -6,4 +6,4 @@ The reason for all this being on GitHub is that I simply couldn't be bothered to
 
 Uses my [website boilerplate](https://github.com/LWTechGaming/website-boilerplate) for the live reloading system, [Browserify](http://browserify.org) for bundle transpilation and [CircleCI](https://circleci.com) for Continuous Integration.
 
-Also, the design is from HTML5UP because I suck at making websites look good. See [LICENSE.txt](public/dev/LICENSE.txt).
+Also, the design is from HTML5 UP because I suck at making websites look good. See [LICENSE.txt](public/dev/LICENSE.txt).
