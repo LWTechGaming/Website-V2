@@ -4,8 +4,9 @@
   "description": "A simple boilerplate for creating a website, with a live reloading development environment.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "eslint .",
+    "start": "node server.js",
+    "compile": "cd ./public/src && browserify generators.js -o ../assets/js/generators.js && browserify 404.js -o ../assets/js/404.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,14 @@
   "homepage": "https://github.com/LWTechGaming/website-boilerplate#readme",
   "dependencies": {
     "live-server": "^1.2.0"
+  },
+  "devDependencies": {
+    "browserify": "^14.5.0",
+    "eslint": "^4.11.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
   }
 }

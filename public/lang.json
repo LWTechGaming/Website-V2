@@ -1,0 +1,71 @@
+{
+  "contact": {
+    "header": {
+      "en": "Contact me",
+      "fi": "Ota yhteyttä",
+      "sv": "Kontakta mig"
+    },
+    "texts": [
+      {
+        "en": "If you want to get in touch with me formally, email is the best way to reach me. You can find my email from the bar on the right.",
+        "fi": "Jos haluat ottaa minuun yhteyttä muodollisesti, sähköposti on paras tapa tavoittaa minut. Voit löytää sähköpostini oikealla olevasta palkista.",
+        "sv": "Om du vill kontakta mig formellt, är e-post det bästa sättet att diskutera med mig. Du kan hitta min e-postaddress från balken till höger."
+      },
+      {
+        "en": "For more informal conversation, my Direct Messages on Discord are open and I'm responsive on the platform! You can also find that from the bar on the right.",
+        "fi": "Epämuodollisempaan keskusteluun suositelen Discordia, yksityisviestini ovat avoinna ja olen aktiivinen tällä alustalla! Voit löytää tämänkin oikealla olevasta palkista.",
+        "sv": "För mer informellt diskuterande är mina direktmeddelanden på Discord öppna, och jag är responsiv på denna plattform! Du kan också hitta detta från balken till höger."
+      },
+      {
+        "en": "Additionally, here are some of the social medias you can find me on.",
+        "fi": "Lisäksi, tässä on muutama sosiaalinen media josta minut voi löytää.",
+        "sv": "Här är dessutom några sociala medier som du kan hitta mig på."
+      }
+    ],
+    "email": {
+      "en": "E-mail",
+      "fi": "Sähköposti",
+      "sv": "E-post"
+    }
+  },
+  "error": {
+    "404": {
+      "header": {
+        "en": "Whoops!",
+        "fi": "Hupsista!",
+        "sv": "Hoppsan!"
+      },
+      "texts": [
+        {
+          "en": "Looks like you tried to access a resource that isn't present on this website!",
+          "fi": "Näyttää siltä, että yritit päästä käsiksi resurssiin jota ei ole olemassa tällä verkkosivulla!",
+          "sv": "Det verkar som att du försökte komma åt en resurs som inte finns på denna nätsida!"
+        },
+        {
+          "en": "If you're lost, click the button below to get back to the homepage.",
+          "fi": "Jos olet eksyksissä, klikkaa alla olevaa nappulaa päästäksesi takaisin kotisivulle.",
+          "sv": "Om du har gått vilse, klicka på knappen nedan för att komma tillbaka till hemsidan."
+        }
+      ],
+      "button": {
+        "en": {
+          "text": "Back",
+          "href": "index.html"
+        },
+        "fi": {
+          "text": "Takaisin",
+          "href": "fi/index.html"
+        },
+        "sv": {
+          "text": "Tillbaka",
+          "href": "sv/index.html"
+        }
+      }
+    }
+  },
+  "pageLang": {
+    "en": "In English",
+    "fi": "Suomeksi",
+    "sv": "På svenska"
+  }
+}

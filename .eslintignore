@@ -1,0 +1,9 @@
+public/assets/*
+.circleci/*
+
+*.html
+*.json
+*.ico
+*.jpg
+*.png
+*.txt
