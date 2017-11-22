@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Update NPM
+          name: NPM update
           command: 'sudo npm install -g npm@latest'
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
