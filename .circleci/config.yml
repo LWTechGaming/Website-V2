@@ -1,12 +1,43 @@
 version: 2
 jobs:
   build:
-    machine:
-      image: circleci/classic:latest
-    working_directory: ~/website
-    branches:
-      only:
-        - master
+    docker:
+      - image: circleci/node:latest
     steps:
       - checkout
-      - run: scp -r ./public/* $DEPLOYMENT_USER@$DEPLOYMENT_HOST:$DEPLOYMENT_DIR
+      - run:
+          name: Update NPM
+          command: 'sudo npm install -g npm@latest'
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: NPM install
+          command: npm install
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+      - run:
+          name: NPM test
+          command: npm test
+
+  deploy:
+    machine:
+      image: circleci/classic:latest
+    steps:
+      - checkout
+      - run:
+          name: Deploy code to server
+          command: scp -r ./public/* $DEPLOYMENT_USER@$DEPLOYMENT_HOST:$DEPLOYMENT_DIR
+
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - build
+      - deploy
+        requires:
+          - build
+        filters:
+          branches:
+            only: master
