@@ -1,9 +1,8 @@
 const html = require('./html.js')
 const sitemap = require('../sitemap.json')
-const bl = require('../buttons.json').lang
+const l = require('../lang.json')
 
-function generateMenu () {
-  let lang = localStorage.getItem('lang')
+function generateMenu (lang) {
   let menu = html.get('links')
   let actions = html.get('actions')
 
@@ -23,21 +22,43 @@ function generateMenu () {
   switch (lang) {
     case 'en':
       // Fi/sv
-      _generateLangButton(actions, '/fi', bl.fi)
-      _generateLangButton(actions, '/sv', bl.sv)
+      _generateLangButton(actions, '/fi', l.pageLang.fi)
+      _generateLangButton(actions, '/sv', l.pageLang.sv)
       break
     case 'fi':
       // En/sv
-      _generateLangButton(actions, '../', bl.en)
-      _generateLangButton(actions, '../sv', bl.sv)
+      _generateLangButton(actions, '../', l.pageLang.en)
+      _generateLangButton(actions, '../sv', l.pageLang.sv)
       break
     case 'sv':
       // En/fi
-      _generateLangButton(actions, '../', bl.en)
-      _generateLangButton(actions, '../fi', bl.fi)
+      _generateLangButton(actions, '../', l.pageLang.en)
+      _generateLangButton(actions, '../fi', l.pageLang.fi)
       break
     default:
       console.error('Menu generation failed, unknown lang type: ' + lang)
+  }
+}
+
+function generateContact (lang) {
+  let section = html.get('contact-section')
+
+  // Create form header
+  let header = document.createElement('header')
+  let h2 = document.createElement('h2')
+  // Prepare header and h2 tags
+  header.setAttribute('class', 'major')
+  h2.innerHTML = l.contact.header[lang]
+  // Append elements
+  section.appendChild(header)
+  header.appendChild(h2)
+
+  // Create form contents
+  for (let i = 0; i < l.contact.texts.length; i++) {
+    // Create paragraph
+    let p = document.createElement('p')
+    p.innerHTML = l.contact.texts[i][lang]
+    section.appendChild(p)
   }
 }
 
@@ -65,6 +86,7 @@ function _generateLangButton (menu, href, innerHTML) {
   li.appendChild(a)
 }
 
-// Run the func
+// Run
 detectLang()
-generateMenu()
+generateMenu(localStorage.getItem('lang'))
+generateContact(localStorage.getItem('lang'))
