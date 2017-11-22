@@ -11,9 +11,11 @@ function generateMenu (lang) {
     // Create elements
     let li = document.createElement('li')
     let a = document.createElement('a')
+
     // Prepare <a href></a> tag
     a.setAttribute('href', sitemap[lang][i].pageFile)
     a.innerHTML = sitemap[lang][i].pageName
+
     // Append elements
     menu.appendChild(li)
     li.appendChild(a)
@@ -42,13 +44,16 @@ function generateMenu (lang) {
 
 function generateContact (lang) {
   let section = html.get('contact-section')
+  let email = html.get('contact-email')
 
   // Create form header
   let header = document.createElement('header')
   let h2 = document.createElement('h2')
+
   // Prepare header and h2 tags
   header.setAttribute('class', 'major')
   h2.innerHTML = l.contact.header[lang]
+
   // Append elements
   section.appendChild(header)
   header.appendChild(h2)
@@ -60,33 +65,30 @@ function generateContact (lang) {
     p.innerHTML = l.contact.texts[i][lang]
     section.appendChild(p)
   }
-}
 
-function detectLang () {
-  let path = location.pathname
-  if (path.includes('/fi/') === true) {
-    localStorage.setItem('lang', 'fi')
-  } else if (path.includes('/sv/') === true) {
-    localStorage.setItem('lang', 'sv')
-  } else {
-    localStorage.setItem('lang', 'en')
-  }
+  // Insert links after the text
+  section.insertAdjacentHTML('beforeend', '<ul class="icons"><li><a href="https://github.com/LWTechGaming" class="icon alt fa-github"><span class="label">GitHub</span></a></li><li><a href="https://linkedin.com/in/linuswillner" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li><li><a href="https://twitter.com/LWTechGaming" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li><li><a href="https://instagram.com/LWTechGaming" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li></ul>')
+
+  // Create email label
+  email.innerHTML = l.contact.email[lang]
 }
 
 function _generateLangButton (menu, href, innerHTML) {
   // Create elements
   let li = document.createElement('li')
   let a = document.createElement('a')
+
   // Set attributes
   a.setAttribute('href', href)
   a.setAttribute('class', 'button special fit')
   a.innerHTML = innerHTML
+
   // Append
   menu.appendChild(li)
   li.appendChild(a)
 }
 
 // Run
-detectLang()
+html.detectLang()
 generateMenu(localStorage.getItem('lang'))
 generateContact(localStorage.getItem('lang'))
