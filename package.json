@@ -6,7 +6,7 @@
   "scripts": {
     "test": "eslint .",
     "start": "node server.js",
-    "compile": "cd ./public/src && browserify generators.js -o ../assets/js/generators.js && browserify 404.js -o ../assets/js/404.js"
+    "compile": "browserify ./public/src/generators.js -o ./assets/js/generators.js && browserify ./public/src/404.js -o ./assets/js/404.js"
   },
   "repository": {
     "type": "git",
