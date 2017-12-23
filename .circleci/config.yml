@@ -24,9 +24,6 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Run Browserify
-          command: npm run compile
-      - run:
           name: Deploy code to server
           command: scp -r ./public/* $DEPLOYMENT_USER@$DEPLOYMENT_HOST:$DEPLOYMENT_DIR
 
