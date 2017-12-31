@@ -215,6 +215,10 @@ function generateContact (lang) {
   email.innerHTML = l.contact.email[lang]
 }
 
+function generateCurrentYear () {
+  html.get('year').innerHTML = new Date().getFullYear()
+}
+
 function _generateLangButton (menu, href, innerHTML) {
   // Create elements
   let li = document.createElement('li')
@@ -232,6 +236,7 @@ function _generateLangButton (menu, href, innerHTML) {
 
 // Run
 html.detectLang()
+generateCurrentYear()
 generateMenu(localStorage.getItem('lang'))
 generateContact(localStorage.getItem('lang'))
 
