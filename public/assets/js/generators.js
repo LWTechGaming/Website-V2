@@ -209,7 +209,7 @@ function generateContact (lang) {
   }
 
   // Insert links after the text
-  section.insertAdjacentHTML('beforeend', '<ul class="icons"><li><a href="https://github.com/LWTechGaming" class="icon alt fa-github"><span class="label">GitHub</span></a></li><li><a href="https://linkedin.com/in/linuswillner" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li><li><a href="https://twitter.com/LWTechGaming" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li><li><a href="https://instagram.com/LWTechGaming" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li></ul>')
+  section.insertAdjacentHTML('beforeend', '<ul class="icons"><li><a href="https://github.com/LWTechGaming" class="icon alt fa-github"><span class="label">GitHub</span></a></li><li><a href="https://linkedin.com/in/linuswillner" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li><li><a href="https://twitter.com/linuswillner" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li><li><a href="https://instagram.com/linuswillner" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li></ul>')
 
   // Create email label
   email.innerHTML = l.contact.email[lang]
