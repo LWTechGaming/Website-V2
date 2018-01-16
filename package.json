@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LWTechGaming/website-boilerplate.git"
+    "url": "git+https://github.com/linuswillner/website-boilerplate.git"
   },
   "author": "Linus Willner",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/LWTechGaming/website-boilerplate/issues"
+    "url": "https://github.com/linuswillner/website-boilerplate/issues"
   },
-  "homepage": "https://github.com/LWTechGaming/website-boilerplate#readme",
+  "homepage": "https://github.com/linuswillner/website-boilerplate#readme",
   "dependencies": {
     "live-server": "^1.2.0"
   },
