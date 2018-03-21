@@ -2,10 +2,6 @@
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/linuswillner/Website-V2.svg)](https://greenkeeper.io/)
 
-This is the source code for my new personal website at https://linuswillner.me.
+This is the source code for my old personal website. The new version is live now at https://linuswillner.me and the source code can be found in [Website-V3](https://github.com/linuswillner/Website-V3).
 
-The reason for all this being on GitHub is that I simply couldn't be bothered to do this via SFTP and set up CircleCI to SCP the files for me. **#justdeveloperproblems**
-
-Uses my [website boilerplate](https://github.com/linuswillner/website-boilerplate) for the live reloading system, [Browserify](http://browserify.org) for bundle transpilation and [CircleCI](https://circleci.com) for Continuous Integration.
-
-Also, the design is from HTML5 UP because I suck at making websites look good. See [LICENSE.txt](public/dev/LICENSE.txt).
+I replaced this version with the new one because this site consists of hackjob HTML, CSS and JS spaghetti that I didn't feel like unraveling so I just made a new one. Kthxbye
